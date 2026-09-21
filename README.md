@@ -1,8 +1,14 @@
 # OpenRetention — self-hosted customer success software for B2B SaaS
 
-[Website](https://yashkhou.github.io/openretention/) · [Health score guide](https://yashkhou.github.io/openretention/customer-health-score.html) · [Self-hosting guide](https://yashkhou.github.io/openretention/self-hosted-customer-success.html) · [FAQ](https://yashkhou.github.io/openretention/faq.html)
+[![CI](https://github.com/yashkhou/openretention/actions/workflows/ci.yml/badge.svg)](https://github.com/yashkhou/openretention/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/yashkhou/openretention)](https://github.com/yashkhou/openretention/releases) [![License: BSL 1.1](https://img.shields.io/badge/license-BSL--1.1-blue)](LICENSE) ![Self-hosted](https://img.shields.io/badge/self--hosted-yes-brightgreen) ![Node 24](https://img.shields.io/badge/node-%3E%3D24-339933?logo=node.js&logoColor=white) ![Source available](https://img.shields.io/badge/source-available-6f42c1)
+
+[Website](https://yashkhou.github.io/openretention/) · [Dashboard preview](https://yashkhou.github.io/openretention/product-dashboard.html) · [Health score guide](https://yashkhou.github.io/openretention/customer-health-score.html) · [Self-hosting guide](https://yashkhou.github.io/openretention/self-hosted-customer-success.html) · [FAQ](https://yashkhou.github.io/openretention/faq.html)
 
 OpenRetention is a **source-available, self-hosted customer success operating system** for B2B SaaS teams that need account health scoring, churn-risk detection, renewal visibility and revenue-at-risk prioritization without adopting a large enterprise customer-success suite.
+
+## Product preview
+
+The public [dashboard preview](https://yashkhou.github.io/openretention/product-dashboard.html) mirrors the current seeded product UI and exists specifically so screenshots can be rendered from a stable public URL instead of localhost. Screenshot publication follows [docs/PUBLISHING.md](docs/PUBLISHING.md).
 
 ## Why OpenRetention
 
