@@ -1,0 +1,16 @@
+{
+  "name": "openretention",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Source-available, self-hosted customer success OS for B2B SaaS teams.",
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": ["customer-success", "churn", "retention", "health-score", "self-hosted", "b2b-saas"],
+  "license": "BUSL-1.1"
+}
