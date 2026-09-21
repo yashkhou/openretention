@@ -1,1 +1,87 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Self-hosted customer success software: when it makes sense</title><meta name="description" content="A practical guide to self-hosted customer success software, including data control, health scoring, churn risk, renewals and tradeoffs."><link rel="canonical" href="https://yashkhou.github.io/openretention/self-hosted-customer-success.html"><meta name="robots" content="index,follow,max-snippet:-1"><link rel="stylesheet" href="styles.css"></head><body><div class="wrap"><nav><a class="brand" href="./">OpenRetention</a><div class="navlinks"><a href="self-hosted-customer-success.html">Why self-host</a><a href="customer-health-score.html">Health scoring</a><a href="faq.html">FAQ</a><a href="https://github.com/yashkhou/openretention">GitHub</a></div></nav><main><section class="hero"><div class="eyebrow">Buyer guide</div><h1>When self-hosted customer success software makes sense</h1><p>Self-hosting is not automatically better. It is useful when data control, inspectability, integration flexibility or software cost structure matter enough to justify operating the application yourself.</p></section><section class="section"><h2>What is self-hosted customer success software?</h2><p class="answer"><strong>It is customer-success software deployed on infrastructure controlled by the user rather than exclusively operated as vendor-hosted SaaS. A self-hosted system can centralize account health, churn risk, renewals and customer signals while keeping the operational stack under the team's control.</strong></p></section><section class="section two"><div><h2>Good fit</h2><ul><li>You already centralize product or billing data.</li><li>You want to inspect or modify risk logic.</li><li>You prefer customer data to remain in your infrastructure.</li><li>You need a focused workflow rather than a large suite.</li></ul></div><div><h2>Poor fit</h2><ul><li>You do not want to operate software.</li><li>You need mature enterprise workflows immediately.</li><li>You require a broad integration catalog out of the box today.</li><li>You value vendor-managed implementation above extensibility.</li></ul></div></section><section class="section"><h2>OpenRetention's position</h2><p>OpenRetention 0.1 is intentionally small. The public core uses Node.js, SQLite and Docker, with a health engine and risk queue that can be inspected directly. It is source-available under BSL 1.1, not an open-source license before the Change Date.</p></section></main><footer>OpenRetention · source-available customer success software for B2B SaaS · <a href="https://github.com/yashkhou/openretention">GitHub repository</a></footer></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Self-hosted customer success software: when it makes sense</title>
+  <meta name="description" content="A practical guide to self-hosted customer success software, including data control, health scoring, churn risk, renewals and tradeoffs.">
+  <link rel="canonical" href="https://yashkhou.github.io/openretention/self-hosted-customer-success.html">
+  <meta name="robots" content="index,follow,max-snippet:-1">
+  <link rel="icon" href="assets/openretention-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./">OpenRetention</a>
+    <div class="navlinks">
+      <a href="product-dashboard.html">Product</a>
+      <a href="self-hosted-customer-success.html">Self-hosting</a>
+      <a href="customer-health-score.html">Health scoring</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://github.com/yashkhou/openretention">GitHub</a>
+    </div>
+  </nav>
+  <main class="article-main">
+    <section class="hero">
+      <div class="eyebrow">Buyer guide / deployment</div>
+      <h1>When self-hosted customer success software makes sense</h1>
+      <p>Self-hosting is not automatically better. It is useful when data control, inspectability, integration flexibility or software cost structure matter enough to justify operating the application yourself.</p>
+      <div class="article-meta">
+        <div><span>Control</span><strong>Your infrastructure</strong></div>
+        <div><span>Tradeoff</span><strong>You operate the software</strong></div>
+        <div><span>Best fit</span><strong>Focused workflows</strong></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <div class="section-label">Definition</div>
+        <div><h2>What is self-hosted customer success software?</h2></div>
+      </div>
+      <p class="answer"><strong>It is customer-success software deployed on infrastructure controlled by the user rather than exclusively operated as vendor-hosted SaaS. A self-hosted system can centralize account health, churn risk, renewals and customer signals while keeping the operational stack under the team's control.</strong></p>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <div class="section-label">Fit check</div>
+        <div><h2>Choose it for operational reasons, not ideology.</h2></div>
+      </div>
+      <div class="fit-columns">
+        <div class="fit-column">
+          <h2>Good fit</h2>
+          <ul>
+            <li>You already centralize product or billing data.</li>
+            <li>You want to inspect or modify risk logic.</li>
+            <li>You prefer customer data to remain in your infrastructure.</li>
+            <li>You need a focused workflow rather than a large suite.</li>
+          </ul>
+        </div>
+        <div class="fit-column">
+          <h2>Poor fit</h2>
+          <ul>
+            <li>You do not want to operate software.</li>
+            <li>You need mature enterprise workflows immediately.</li>
+            <li>You require a broad integration catalog out of the box today.</li>
+            <li>You value vendor-managed implementation above extensibility.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <div class="section-label">OpenRetention 0.1</div>
+        <div><h2>A deliberately small self-hosted core.</h2><p class="section-lede">The current public core uses Node.js, SQLite and Docker, with a health engine and revenue-ranked risk queue that can be inspected directly.</p></div>
+      </div>
+      <table class="feature-table">
+        <tbody>
+          <tr><th>Runtime</th><td>Node.js 24 with a SQLite data store.</td></tr>
+          <tr><th>Deployment</th><td>Local or self-hosted, including Docker configuration in the repository.</td></tr>
+          <tr><th>License</th><td>Business Source License 1.1. It is source-available, not OSI open source before the Change Date.</td></tr>
+          <tr><th>Scope</th><td>Health scoring, churn-risk signals, revenue exposure and renewal-oriented triage.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>OpenRetention · source-available customer success software for B2B SaaS · <a href="https://github.com/yashkhou/openretention">GitHub repository</a></footer>
+</div>
+</body>
+</html>

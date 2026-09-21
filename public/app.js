@@ -49,7 +49,7 @@ function renderRisk(){
   const rows = riskRows();
   const body = document.querySelector('#risk');
   body.innerHTML = rows.length ? rows.map(a => `
-    <tr data-account-id="${escapeHtml(a.externalId)}" class="${state.selected?.externalId === a.externalId ? 'is-selected' : ''}">
+    <tr data-account-id="${escapeHtml(a.externalId)}" tabindex="0" aria-selected="${state.selected?.externalId === a.externalId ? 'true' : 'false'}" class="${state.selected?.externalId === a.externalId ? 'is-selected' : ''}">
       <td class="account-cell"><strong>${escapeHtml(a.name)}</strong><span class="account-id">${escapeHtml(a.externalId)}</span></td>
       <td class="money">${money(a.mrr)}</td>
       <td>${scoreCell(a)}</td>
@@ -63,7 +63,7 @@ function renderAccounts(){
   const rows = accountRows();
   const body = document.querySelector('#accounts');
   body.innerHTML = rows.length ? rows.map(a => `
-    <tr data-account-id="${escapeHtml(a.externalId)}" class="${state.selected?.externalId === a.externalId ? 'is-selected' : ''}">
+    <tr data-account-id="${escapeHtml(a.externalId)}" tabindex="0" aria-selected="${state.selected?.externalId === a.externalId ? 'true' : 'false'}" class="${state.selected?.externalId === a.externalId ? 'is-selected' : ''}">
       <td class="account-cell"><strong>${escapeHtml(a.name)}</strong><span class="account-id">${escapeHtml(a.externalId)}</span></td>
       <td class="money">${money(a.mrr)}</td>
       <td class="number">${Number(a.usage7d || 0)}</td>
@@ -76,14 +76,20 @@ function renderAccounts(){
 }
 
 function bindRowSelection(tbody){
+  const selectRow = row => {
+    const account = state.accounts.find(a => a.externalId === row.dataset.accountId);
+    if (!account) return;
+    state.selected = account;
+    renderInspector();
+    renderRisk();
+    renderAccounts();
+  };
   tbody.querySelectorAll('tr[data-account-id]').forEach(row => {
-    row.addEventListener('click', () => {
-      const account = state.accounts.find(a => a.externalId === row.dataset.accountId);
-      if (!account) return;
-      state.selected = account;
-      renderInspector();
-      renderRisk();
-      renderAccounts();
+    row.addEventListener('click', () => selectRow(row));
+    row.addEventListener('keydown', event => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      selectRow(row);
     });
   });
 }
