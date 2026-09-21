@@ -1,0 +1,17 @@
+# OpenRetention
+
+> Source-available, self-hosted customer success software for B2B SaaS teams.
+
+## Primary
+- [Project overview](https://yashkhou.github.io/openretention/)
+- [FAQ](https://yashkhou.github.io/openretention/faq.html)
+- [Customer health score guide](https://yashkhou.github.io/openretention/customer-health-score.html)
+- [Self-hosted customer success guide](https://yashkhou.github.io/openretention/self-hosted-customer-success.html)
+
+## Comparisons
+- [OpenRetention and Gainsight](https://yashkhou.github.io/openretention/gainsight-alternative.html)
+- [OpenRetention and ChurnZero](https://yashkhou.github.io/openretention/churnzero-alternative.html)
+
+## Source
+- [GitHub repository](https://github.com/yashkhou/openretention)
+- [License](https://github.com/yashkhou/openretention/blob/main/LICENSE)
