@@ -1,11 +1,108 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenRetention dashboard preview</title><meta name="description" content="Static product preview of the OpenRetention revenue-risk dashboard using seeded demo data."><link rel="canonical" href="https://yashkhou.github.io/openretention/product-dashboard.html"><meta name="robots" content="index,follow,max-image-preview:large"><style>
-:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,sans-serif;background:#0b0e14;color:#f5f7fb}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#182033 0,#0b0e14 38%);min-height:100vh}main{max-width:1180px;margin:0 auto;padding:42px 24px 80px}.top{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:28px}h1{margin:0;font-size:34px;letter-spacing:-1.2px}.sub{color:#9098a9;margin-top:7px}.pill{border:1px solid #293147;padding:8px 12px;border-radius:999px;color:#b7c0d4;font-size:13px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:26px}.card{background:rgba(19,24,36,.8);border:1px solid #222a3b;border-radius:18px;padding:18px}.label{color:#8d97aa;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.metric{font-size:28px;font-weight:700;margin-top:8px}.risk{color:#ffb4aa}.section-title{display:flex;justify-content:space-between;align-items:center;margin:24px 0 12px}h2{font-size:18px;margin:0}table{width:100%;border-collapse:collapse}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid #222a3b;font-size:14px}th{color:#7f899d;font-size:11px;text-transform:uppercase;letter-spacing:.07em}.score{display:inline-flex;min-width:50px;justify-content:center;padding:5px 9px;border-radius:999px;font-weight:700;border:1px solid}.green{color:#7fe0ad;border-color:#285b43;background:#11291e}.amber{color:#ffd27a;border-color:#654b1c;background:#2f2410}.red{color:#ff9587;border-color:#6c302d;background:#321615}.reason{color:#a8b1c2;font-size:12px;max-width:360px}@media(max-width:800px){.metrics{grid-template-columns:1fr 1fr}.top{align-items:start;flex-direction:column}.table-wrap{overflow:auto}}</style></head><body><main>
-<div class="top"><div><h1>OpenRetention</h1><div class="sub">The self-hosted customer success OS for B2B SaaS.</div></div><div class="pill">Risk inbox · transparent health scoring · no seat tax</div></div>
-<section class="metrics"><div class="card"><div class="label">ARR</div><div class="metric">$198,360</div></div><div class="card"><div class="label">At-risk ARR</div><div class="metric risk">$99,600</div></div><div class="card"><div class="label">Red accounts</div><div class="metric risk">1</div></div><div class="card"><div class="label">Amber accounts</div><div class="metric">2</div></div></section>
-<div class="section-title"><h2>Risk inbox</h2><span class="sub">Highest revenue risk first</span></div><div class="card table-wrap"><table><thead><tr><th>Account</th><th>MRR</th><th>Health</th><th>Renewal</th><th>Why it is at risk</th></tr></thead><tbody>
-<tr><td><strong>Orbit Labs</strong></td><td>$2,750</td><td><span class="score red">15</span></td><td>Sep 30, 2026</td><td class="reason">Subscription is past due · Usage dropped by more than 80% week-over-week · No activity for more than 21 days · Renewal is within 30 days</td></tr>
-<tr><td><strong>Acme Analytics</strong></td><td>$4,200</td><td><span class="score amber">52</span></td><td>Oct 9, 2026</td><td class="reason">Usage dropped by more than 80% week-over-week · No activity for more than 7 days · Renewal is within 30 days</td></tr>
-<tr><td><strong>Rivet AI</strong></td><td>$1,350</td><td><span class="score amber">65</span></td><td>Nov 5, 2026</td><td class="reason">Recent payment failure</td></tr></tbody></table></div>
-<div class="section-title"><h2>All accounts</h2><span class="sub">Seeded demo data</span></div><div class="card table-wrap"><table><thead><tr><th>Account</th><th>MRR</th><th>Usage 7d</th><th>Previous 7d</th><th>Health</th></tr></thead><tbody>
-<tr><td><strong>Orbit Labs</strong></td><td>$2,750</td><td>0</td><td>40</td><td><span class="score red">15</span></td></tr><tr><td><strong>Acme Analytics</strong></td><td>$4,200</td><td>12</td><td>110</td><td><span class="score amber">52</span></td></tr><tr><td><strong>Rivet AI</strong></td><td>$1,350</td><td>20</td><td>21</td><td><span class="score amber">65</span></td></tr><tr><td><strong>Cobalt Systems</strong></td><td>$1,600</td><td>51</td><td>120</td><td><span class="score green">75</span></td></tr><tr><td><strong>Pineworks</strong></td><td>$650</td><td>8</td><td>9</td><td><span class="score green">75</span></td></tr></tbody></table></div>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OpenRetention product dashboard preview</title>
+  <meta name="description" content="Static preview of the OpenRetention customer success risk console using seeded demo data.">
+  <link rel="canonical" href="https://yashkhou.github.io/openretention/product-dashboard.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product-dashboard.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand-lockup"><span class="brand-mark" aria-hidden="true"></span><span>OpenRetention</span></div>
+    <div class="workspace-switch"><span class="workspace-name">Demo workspace</span><span class="workspace-meta">8 accounts</span></div>
+    <div class="top-actions"><span class="sync-state"><span class="sync-dot"></span>Seeded data</span><a class="plain-button" style="display:flex;align-items:center;text-decoration:none" href="./">Website</a></div>
+  </header>
+
+  <div class="body-grid">
+    <aside class="sidebar">
+      <div class="nav-group">
+        <div class="nav-label">Workspace</div>
+        <button class="nav-button is-active" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19V5m0 14h16M7 15l3-4 3 2 4-6"/></svg>Risk inbox <span class="nav-count">3</span></button>
+        <button class="nav-button" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>Accounts <span class="nav-count">8</span></button>
+        <button class="nav-button" type="button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M8 3v4m8-4v4M4 10h16"/></svg>Renewals</button>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">System</div>
+        <button class="nav-button" type="button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 4h12v16H6zM9 8h6m-6 4h6m-6 4h4"/></svg>Playbooks</button>
+        <button class="nav-button" type="button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.5-2.4 1a8 8 0 0 0-1.7-1L14.5 3h-5L9 6a8 8 0 0 0-1.7 1L5 6 3 9.5 5.1 11a7 7 0 0 0 0 2L3 14.5 5 18l2.3-1a8 8 0 0 0 1.7 1l.5 3h5l.5-3a8 8 0 0 0 1.7-1l2.3 1 2-3.5-2.1-1.5c.1-.3.1-.7.1-1z"/></svg>Settings</button>
+      </div>
+      <div class="sidebar-note">Public product preview<br>Seeded demo values</div>
+    </aside>
+
+    <main class="main-panel">
+      <section class="panel-section">
+        <div class="page-header">
+          <div class="crumb">Customer success / Risk</div>
+          <div class="title-row">
+            <div><h1>Risk inbox</h1><p class="header-caption">Accounts ordered by revenue exposure and health deterioration.</p></div>
+            <button class="primary-button" type="button">Review queue</button>
+          </div>
+          <div class="status-strip">
+            <div class="stat"><div class="stat-label">ARR</div><div class="stat-value">$198,360</div></div>
+            <div class="stat stat-risk"><div class="stat-label">At-risk ARR</div><div class="stat-value">$99,600</div></div>
+            <div class="stat stat-risk"><div class="stat-label">Critical</div><div class="stat-value">1</div></div>
+            <div class="stat"><div class="stat-label">Watch</div><div class="stat-value">2</div></div>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="segmented"><button class="is-active">All risk</button><button>Critical</button><button>Watch</button></div>
+          <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="search" placeholder="Search accounts" aria-label="Search accounts"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th style="width:22%">Account</th><th style="width:12%">MRR</th><th style="width:16%">Health</th><th style="width:17%">Renewal</th><th>Signals</th></tr></thead>
+            <tbody>
+              <tr class="is-selected">
+                <td class="account-cell"><strong>Orbit Labs</strong><span class="account-id">orbit</span></td>
+                <td class="money">$2,750</td>
+                <td><div class="health red"><span class="health-bar"><span style="width:15%"></span></span><span class="health-value">15</span></div></td>
+                <td class="date-cell">Sep 30, 2026</td>
+                <td class="reason"><span class="risk-signal">Subscription is past due</span><span class="risk-signal">Usage dropped by more than 80% week-over-week</span><span class="risk-signal">No activity for more than 21 days</span></td>
+              </tr>
+              <tr>
+                <td class="account-cell"><strong>Acme Analytics</strong><span class="account-id">acme</span></td>
+                <td class="money">$4,200</td>
+                <td><div class="health amber"><span class="health-bar"><span style="width:52%"></span></span><span class="health-value">52</span></div></td>
+                <td class="date-cell">Oct 9, 2026</td>
+                <td class="reason"><span class="risk-signal">Usage dropped by more than 80% week-over-week</span><span class="risk-signal">No activity for more than 7 days</span><span class="risk-signal">Renewal is within 30 days</span></td>
+              </tr>
+              <tr>
+                <td class="account-cell"><strong>Rivet AI</strong><span class="account-id">rivet</span></td>
+                <td class="money">$1,350</td>
+                <td><div class="health amber"><span class="health-bar"><span style="width:65%"></span></span><span class="health-value">65</span></div></td>
+                <td class="date-cell">Nov 5, 2026</td>
+                <td class="reason"><span class="risk-signal">Recent payment failure</span></td>
+              </tr>
+              <tr>
+                <td class="account-cell"><strong>Cobalt Systems</strong><span class="account-id">cobalt</span></td>
+                <td class="money">$1,600</td>
+                <td><div class="health green"><span class="health-bar"><span style="width:75%"></span></span><span class="health-value">75</span></div></td>
+                <td class="date-cell">Oct 19, 2026</td>
+                <td class="reason"><span class="risk-signal">No active risk signals</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <aside class="inspector">
+      <div class="inspector-header"><div class="inspector-kicker">Selected account</div><div class="inspector-title">Orbit Labs</div><div class="inspector-sub">orbit</div></div>
+      <section class="inspector-section"><h2>Commercial</h2><dl class="key-values"><dt>MRR</dt><dd>$2,750</dd><dt>ARR</dt><dd>$33,000</dd><dt>Renewal</dt><dd>Sep 30, 2026</dd><dt>Payment</dt><dd>Past due</dd></dl></section>
+      <section class="inspector-section"><h2>Product activity</h2><dl class="key-values"><dt>Usage 7d</dt><dd>0</dd><dt>Previous 7d</dt><dd>40</dd><dt>Health</dt><dd>15 / 100</dd></dl></section>
+      <section class="inspector-section"><h2>Active signals</h2><ul class="signal-list"><li>Subscription is past due</li><li>Usage dropped by more than 80% week-over-week</li><li>No activity for more than 21 days</li><li class="warning">Renewal is within 30 days</li></ul></section>
+      <div class="inspector-actions"><button class="plain-button">Add note</button><button class="plain-button">Open account</button></div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>
