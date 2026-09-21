@@ -43,10 +43,10 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
 .sync-dot{width:7px;height:7px;border-radius:50%;background:var(--success)}
 .icon-button,.plain-button,.primary-button{border:1px solid var(--line-strong);background:var(--surface);border-radius:5px;min-height:32px;cursor:pointer}
 .icon-button{width:34px;padding:0;display:grid;place-items:center}
-.plain-button{padding:0 10px}
+.plain-button{padding:0 10px}\na.plain-button{color:var(--ink);text-decoration:none}
 .primary-button{padding:0 11px;background:var(--ink);color:white;border-color:var(--ink);font-weight:500}
 .icon-button:hover,.plain-button:hover{border-color:#96948d;background:#f1f0eb}
-.primary-button:hover{background:#2a2e2b}
+.primary-button:hover{background:#2a2e2b}\n.primary-button:disabled,.plain-button:disabled{opacity:.48;cursor:not-allowed}\n.nav-button:disabled{color:#9a9c96;cursor:default}\n.nav-button:disabled:hover{background:transparent;border-color:transparent}
 .body-grid{display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr) var(--inspector);min-height:0}
 .sidebar{border-right:1px solid var(--line);background:var(--surface-2);padding:12px 10px;display:flex;flex-direction:column;gap:18px}
 .nav-group{display:grid;gap:3px}
