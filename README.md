@@ -10,6 +10,8 @@ OpenRetention is a **source-available, self-hosted customer success operating sy
 
 The public [dashboard preview](https://yashkhou.github.io/openretention/product-dashboard.html) mirrors the current seeded product UI and exists specifically so screenshots can be rendered from a stable public URL instead of localhost. Screenshot publication follows [docs/PUBLISHING.md](docs/PUBLISHING.md).
 
+![OpenRetention operator risk console](site/assets/openretention-dashboard.png)
+
 ## Why OpenRetention
 
 Most early-stage SaaS teams do not need a giant customer-success platform. They need four things working reliably:
