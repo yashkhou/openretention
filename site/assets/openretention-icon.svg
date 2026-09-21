@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">OpenRetention</title>
+  <desc id="desc">OpenRetention monogram</desc>
+  <rect width="512" height="512" rx="112" fill="#0b1020"/>
+  <circle cx="222" cy="256" r="116" fill="none" stroke="#f5f7fb" stroke-width="54"/>
+  <path d="M305 176h84v84" fill="none" stroke="#7fe0ad" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M386 179L292 273" fill="none" stroke="#7fe0ad" stroke-width="42" stroke-linecap="round"/>
+  <circle cx="292" cy="273" r="22" fill="#7fe0ad"/>
+</svg>
