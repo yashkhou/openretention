@@ -1,6 +1,6 @@
 # SEO and AEO operating notes
 
-Canonical site: https://yashkhou.github.io/openretention/
+Canonical site: https://yashkhou.com/projects/openretention
 
 ## Target entities and queries
 - self-hosted customer success software
@@ -27,4 +27,4 @@ Canonical site: https://yashkhou.github.io/openretention/
 
 ## IndexNow
 Key: a7d12f9e8b6c4a31d5e0f7b29c48ea63
-Key file: https://yashkhou.github.io/openretention/a7d12f9e8b6c4a31d5e0f7b29c48ea63.txt
+GitHub Pages verification file: retired with the Pages deployment

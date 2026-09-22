@@ -2,13 +2,13 @@
 
 [![CI](https://github.com/yashkhou/openretention/actions/workflows/ci.yml/badge.svg)](https://github.com/yashkhou/openretention/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/yashkhou/openretention)](https://github.com/yashkhou/openretention/releases) [![License: BSL 1.1](https://img.shields.io/badge/license-BSL--1.1-blue)](LICENSE) ![Self-hosted](https://img.shields.io/badge/self--hosted-yes-brightgreen) ![Node 24](https://img.shields.io/badge/node-%3E%3D24-339933?logo=node.js&logoColor=white) ![Source available](https://img.shields.io/badge/source-available-6f42c1)
 
-[Website](https://yashkhou.github.io/openretention/) · [Dashboard preview](https://yashkhou.github.io/openretention/product-dashboard.html) · [Health score guide](https://yashkhou.github.io/openretention/customer-health-score.html) · [Self-hosting guide](https://yashkhou.github.io/openretention/self-hosted-customer-success.html) · [FAQ](https://yashkhou.github.io/openretention/faq.html)
+[Website](https://yashkhou.com/projects/openretention) · [Dashboard preview](site/product-dashboard.html) · [Health score guide](site/customer-health-score.html) · [Self-hosting guide](site/self-hosted-customer-success.html) · [FAQ](site/faq.html)
 
 OpenRetention is a **source-available, self-hosted customer success operating system** for B2B SaaS teams that need account health scoring, churn-risk detection, renewal visibility and revenue-at-risk prioritization without adopting a large enterprise customer-success suite.
 
 ## Product preview
 
-The public [dashboard preview](https://yashkhou.github.io/openretention/product-dashboard.html) mirrors the current seeded product UI and exists specifically so screenshots can be rendered from a stable public URL instead of localhost. Screenshot publication follows [docs/PUBLISHING.md](docs/PUBLISHING.md).
+The repository includes a [dashboard preview](site/product-dashboard.html) that mirrors the current seeded product UI for documentation and screenshot generation. Screenshot publication follows [docs/PUBLISHING.md](docs/PUBLISHING.md).
 
 ![OpenRetention operator risk console](site/assets/openretention-dashboard.png)
 
@@ -49,15 +49,15 @@ Or run `docker compose up --build`.
 
 A customer health score is a repeatable measure of an account's likelihood of remaining successful or becoming at risk. OpenRetention currently uses explainable signals such as product-usage decline, activity recency, payment state and renewal proximity rather than hiding the result inside an opaque model.
 
-Read the [customer health score guide](https://yashkhou.github.io/openretention/customer-health-score.html) or inspect [the scoring code](src/score.js).
+Read the [customer health score guide](site/customer-health-score.html) or inspect [the scoring code](src/score.js).
 
 ## Alternatives and fit
 
 OpenRetention can be relevant to teams searching for a **self-hosted Gainsight alternative**, **self-hosted ChurnZero alternative**, or simply a smaller customer-success risk system. The current product is deliberately narrower than those commercial suites.
 
-- [OpenRetention vs Gainsight](https://yashkhou.github.io/openretention/gainsight-alternative.html)
-- [OpenRetention vs ChurnZero](https://yashkhou.github.io/openretention/churnzero-alternative.html)
-- [When self-hosted customer success software makes sense](https://yashkhou.github.io/openretention/self-hosted-customer-success.html)
+- [OpenRetention vs Gainsight](site/gainsight-alternative.html)
+- [OpenRetention vs ChurnZero](site/churnzero-alternative.html)
+- [When self-hosted customer success software makes sense](site/self-hosted-customer-success.html)
 
 ## Planned integrations
 

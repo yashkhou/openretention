@@ -9,7 +9,8 @@ Public screenshots and directory assets must be verified visually before publica
 4. Reject screenshots showing localhost errors, browser chrome, blank states, loading states or stale content.
 5. Only after pixel verification, reference the image from metadata, directories, launch posts or documentation.
 
-## Current canonical preview
-https://yashkhou.github.io/openretention/product-dashboard.html
+## Canonical public page
 
-The preview uses the same seeded demo values and risk wording as the current product UI.
+https://yashkhou.com/projects/openretention
+
+The old GitHub Pages deployment is retired. The seeded dashboard preview remains in the repository at site/product-dashboard.html for local documentation and screenshot generation.

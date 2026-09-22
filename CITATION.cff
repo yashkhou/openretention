@@ -4,7 +4,7 @@ title: "OpenRetention"
 type: software
 version: 0.1.0
 date-released: 2026-09-21
-url: "https://yashkhou.github.io/openretention/"
+url: "https://yashkhou.com/projects/openretention"
 repository-code: "https://github.com/yashkhou/openretention"
 license: LicenseRef-BUSL-1.1
 abstract: "Source-available, self-hosted customer success software for B2B SaaS teams with explainable health scoring and revenue-at-risk prioritization."
